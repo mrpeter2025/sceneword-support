@@ -42,6 +42,17 @@ a { color: inherit; }
   box-shadow: 0 24px 70px rgba(60, 48, 19, .10);
 }
 
+.hero > div:last-child {
+  flex: 1 1 0;
+  width: 0;
+  min-width: 0;
+}
+
+.hero h1 {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .brand-mark {
   display: grid;
   place-items: center;
@@ -172,6 +183,8 @@ footer { padding: 28px 4px 0; color: var(--muted); font-size: 13px; text-align: 
 @media (max-width: 700px) {
   .shell { padding-top: 28px; }
   .hero { align-items: flex-start; padding: 30px 24px; border-radius: 28px; }
+  .hero h1 { font-size: 30px; line-height: 1.14; word-break: break-all; }
+  .hero .lead { font-size: 16px; overflow-wrap: anywhere; word-break: break-all; }
   .brand-mark { flex-basis: 62px; width: 62px; height: 62px; border-radius: 19px; font-size: 37px; }
   .link-grid { grid-template-columns: 1fr; }
   .link-card { min-height: 112px; }
